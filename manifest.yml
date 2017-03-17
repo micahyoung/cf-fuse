@@ -1,0 +1,9 @@
+---
+applications:
+- name: cf-fuse
+  buildpack: binary_buildpack
+  command: ./run.sh
+  health-check-type: process
+  memory: 512M
+  no-hostname: true
+  no-route: true
